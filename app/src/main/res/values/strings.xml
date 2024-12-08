@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Movies 2 watch</string>
+    <string name="remove_movie">Remove movie</string>
+    <string name="genre">Genre</string>
+    <string name="year">Year</string>
+    <string name="rating">Rating</string>
+    <string-array name="sort_options">
+        <item>Genre (A-Z)</item>
+        <item>Genre (Z-A)</item>
+        <item>Release Year (Newest)</item>
+        <item>Release Year (Oldest)</item>
+        <item>Rating (Ascending)</item>
+        <item>Rating (Descending)</item>
+    </string-array>
+    <!-- Labels -->
+    <string name="movie_title_label">Title:</string>
+    <string name="movie_genre_label">Genre:</string>
+    <string name="movie_year_label">Release year:</string>
+    <string name="movie_rating_label">Rating:</string>
+    <string name="movie_sort_label">Sort by:</string>
+    <!-- Placeholders -->
+    <string name="movie_title_placeholder">Title</string>
+    <string name="movie_genre_placeholder">Genre</string>
+    <string name="movie_year_placeholder">Year</string>
+    <string name="movie_rating_placeholder">Rating</string>
+</resources>

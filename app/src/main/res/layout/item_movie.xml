@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background"
+    android:theme="@style/Theme.Material3.DynamicColors.Dark.NoActionBar">
+
+    <TextView
+        android:id="@+id/movie_title_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="10sp"
+        android:text="@string/movie_title_label"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/movie_genre_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/movie_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sword_gray"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="10sp"
+        android:text="@string/movie_title_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/movie_genre"
+        app:layout_constraintLeft_toRightOf="@+id/movie_title_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movie_genre_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="10sp"
+        android:text="@string/movie_genre_label"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/movie_year_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/movie_genre"
+        app:layout_constraintTop_toBottomOf="@id/movie_title_label" />
+
+    <TextView
+        android:id="@+id/movie_genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sword_gray"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="10sp"
+        android:text="@string/movie_genre_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/movie_year"
+        app:layout_constraintLeft_toRightOf="@+id/movie_genre_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_title" />
+
+    <TextView
+        android:id="@+id/movie_year_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="10sp"
+        android:text="@string/movie_year_label"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/movie_rating_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/movie_year"
+        app:layout_constraintTop_toBottomOf="@id/movie_genre_label" />
+
+    <TextView
+        android:id="@+id/movie_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sword_gray"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="10sp"
+        android:text="@string/movie_year_placeholder"
+        app:layout_constraintBottom_toTopOf="@+id/movie_rating"
+        app:layout_constraintLeft_toRightOf="@+id/movie_year_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_genre" />
+
+    <TextView
+        android:id="@+id/movie_rating_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12sp"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="10sp"
+        android:text="@string/movie_rating_label"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/remove_movie"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/movie_rating"
+        app:layout_constraintTop_toBottomOf="@id/movie_year_label" />
+
+    <TextView
+        android:id="@+id/movie_rating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12sp"
+        android:background="@color/sword_gray"
+        android:paddingHorizontal="16sp"
+        android:paddingVertical="10sp"
+        android:text="@string/movie_rating_placeholder"
+        app:layout_constraintBottom_toTopOf="@+id/remove_movie"
+        app:layout_constraintLeft_toRightOf="@+id/movie_rating_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_year" />
+
+    <Button
+        android:id="@+id/remove_movie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16sp"
+        android:layout_marginBottom="12sp"
+        android:text="@string/remove_movie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
